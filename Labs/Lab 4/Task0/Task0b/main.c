@@ -9,7 +9,7 @@
 #define O_RDRW 2
 
 int main (int argc , char* argv[], char* envp[])
-{/**/
+{
   int fileDesc = system_call(SYS_OPEN, "greeting", O_RDRW, 0777);
   system_call(SYS_LSEEK, fileDesc, 0x291, SEEK_SET);
   system_call(SYS_WRITE, fileDesc, "Mira.\n\0", 7);
