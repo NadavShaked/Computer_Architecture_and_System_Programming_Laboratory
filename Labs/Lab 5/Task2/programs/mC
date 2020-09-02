@@ -1,0 +1,5 @@
+all: color.o
+	gcc -o col color.o 
+
+color.o: color.c 
+	gcc -c -g -o color.o color.c 

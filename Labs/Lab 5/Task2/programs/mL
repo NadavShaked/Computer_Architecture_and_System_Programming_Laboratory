@@ -1,0 +1,8 @@
+all: looper.o 
+	gcc -o loop looper.o
+
+looper.o: looper.c 
+	gcc -c -g -o looper.o looper.c 
+
+
+

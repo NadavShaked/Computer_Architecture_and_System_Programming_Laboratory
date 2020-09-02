@@ -1,0 +1,8 @@
+all: finiteLooper.o 
+	gcc -o floo finiteLooper.o
+
+finiteLooper.o: finiteLooper.c 
+	gcc -c -g -o finiteLooper.o finiteLooper.c 
+
+
+
